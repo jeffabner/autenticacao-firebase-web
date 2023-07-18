@@ -1,136 +1,136 @@
-html, corpo {
-largura: 100%; altura: 100%;
+html, body {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
 
-fundo: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
-
-Display: Flex;
-justificar-conteúdo: centro;
-alinhar-itens: centro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 * {
-margem: 0; preenchimento: 0; dimensionamento da caixa: borda;
-borda: nenhuma; contorno: nenhum;
-
-
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
 }
 #content_container {
-largura: 30%;
-altura: 70%;
+    width: 30%;
+    height: 70%;
 }
 
 #form_container {
-largura: 100%; altura: 100%;
+    width: 100%;
+    height: 100%;
 
+    background-color: #370617;
+    box-shadow: 0 0 50px -20px #000;
+    border-radius: 2%;
 
-cor de fundo: #370617;
-caixa-sombra: 0 0 50px -20px #000;
-borda-raio: 2%;
-
-transbordamento: oculto;
+    overflow: hidden;
 }
 
 #form_header_container {
-largura: 100%; altura: 5%;
+    width: 100%;
+    height: 5%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
 
-Display: Flex;
-justificar-conteúdo: centro;
-alinhar-itens: centro;
-flutuação: esquerda;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 
-preenchimento: 20px;
-fundo de preenchimento: 30px;
-tampo de preenchimento: 30px;
-
-borda-fundo: 1px sólido transparente;
-border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 20;
-fundo: #000;
+    border-bottom: 1px solid transparent;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 20;
+    background: #000;
 }
 
 #form_header {
-display: inline-block; font-size: 15px; font-family: Bowlby One SC; font-weight: 900; text-transform: uppercase;
-letter-espacing: 1px;
+    display: inline-block;
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 
 
-
-
-
-
-fundo: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
--webkit-background-clip: texto;
--webkit-text-fill-color: transparente;
+    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 }
 
 #form_content_container {
-largura: 100%; altura: 90%;
+    width: 100%;
+    height: 90%;
 
+    float: left;
 
-flutuação: esquerda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-Display: Flex;
-justificar-conteúdo: centro;
-alinhar-itens: centro;
-
-tampo de preenchimento: 30px;
+    padding-top: 30px;
 }
 
 #form_content_inner_container {
-largura: 75%; altura: 100%;
+    width: 75%;
+    height: 100%;
 
-
-flutuação: esquerda;
+    float: left;
 
 }
 
 input {
-largura: 100%;
-altura: 40px;
+    width: 100%;
+    height: 40px;
 
-preenchimento-esquerda: 10px;
-margem-fundo: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
 
-fundo: #000;
-família de fontes: Montserrat;
-peso-fonte: 500;
-cor: #fff;
-tamanho da fonte: 12px;
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
 
-borda-fundo: 2px sólido transparente;
-borda-topo-raio esquerdo: 2%;
-borda-alto-raio direito: 2%;
-border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 1;
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 1;
 }
 
 #button_container {
-largura: 100%; altura: 10%;
+    width: 100%;
+    height: 10%;
 
+    background-image: linear-gradient(80deg, #FFBE0B, #FB5607 50%, #FF006E 50%, #8338EC);
+    color: #fff;
 
-imagem de fundo: gradiente linear (80deg, #FFBE0B, #FB5607 50%, #FF006E 50%, #8338EC);
-cor: #fff;
+    float: left;
 
-flutuação: esquerda;
-
-margem-topo: 5px;
+    margin-top: 5px;
 }
 
-#button_container botão {
-largura: 50%; altura: 100%;
+#button_container button {
+    width: 50%;
+    height: 100%;
+    float: left;
 
-flutuação: esquerda;
+    background: transparent;
+    color: inherit;
 
-fundo: transparente;
-cor: herança;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 12px;
 
-família de fontes: Montserrat;
-espaçamento entre letras: 1px;
-peso-fonte: 900;
-tamanho da fonte: 12px;
+    cursor: pointer;
 
-cursor: ponteiro;
-
-Display: Flex;
-justificar-conteúdo: centro;
-alinhar-itens: centro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

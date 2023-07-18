@@ -1,12 +1,13 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
-};
+    apiKey: "AIzaSyC_hxNAiGfW5BC6TXmFsTAbToE0AQwXJxk",
+    authDomain: "autenticacao-a8aba.firebaseapp.com",
+    projectId: "autenticacao-a8aba",
+    storageBucket: "autenticacao-a8aba.appspot.com",
+    messagingSenderId: "611843672712",
+    appId: "1:611843672712:web:0759c99e48f80737f3ad3d",
+    measurementId: "G-RX58KZCWRK"
+  };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 // Initialize variables

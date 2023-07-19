@@ -35,7 +35,7 @@ function register () {
     return
   }
     // Validate input fields
-  if (senha !=repetir-senha) {
+  if (senha !=repetir_senha) {
     alert('senha confirmada diferente!')
     return
     // Don't continue running the code

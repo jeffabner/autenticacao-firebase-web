@@ -19,7 +19,7 @@ function register () {
   // Get all our input fields
   email = document.getElementById('email').value
   senha = document.getElementById('senha').value
-  repetir-senha = document.getElementById('repetir-senha').value
+  repetir_senha = document.getElementById('repetir_senha').value
   nome_completo = document.getElementById('nome_completo').value
   cpf = document.getElementById('cpf').value
   telefone = document.getElementById('milk_before_cereal').value

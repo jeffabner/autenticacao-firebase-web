@@ -18,24 +18,30 @@ const database = firebase.database()
 function register () {
   // Get all our input fields
   email = document.getElementById('email').value
-  password = document.getElementById('password').value
-  full_name = document.getElementById('full_name').value
-  favourite_song = document.getElementById('favourite_song').value
-  milk_before_cereal = document.getElementById('milk_before_cereal').value
+  senha = document.getElementById('senha').value
+  repetir-senha = document.getElementById('repetir-senha').value
+  nome_completo = document.getElementById('nome_completo').value
+  cpf = document.getElementById('cpf').value
+  telefone = document.getElementById('milk_before_cereal').value
 
   // Validate input fields
-  if (validate_email(email) == false || validate_password(password) == false) {
-    alert('E-mail ou senha está fora de linha!!')
+  if (validate_email(email) == false || validate_password(senha) == false) {
+    alert('E-mail ou senha inválido!!')
     return
     // Don't continue running the code
   }
-  if (validate_field(full_name) == false || validate_field(favourite_song) == false || validate_field(milk_before_cereal) == false) {
-    alert('Um ou mais campos extras estão fora da linha!!')
+  if (validate_field(nome_completo) == false || validate_field(cpf) == false || validate_field(telefone) == false) {
+    alert('Um ou mais campos extras estão inválidos!!')
     return
   }
- 
+    // Validate input fields
+  if (senha !=repetir-senha) {
+    alert('senha confirmada diferente!')
+    return
+    // Don't continue running the code
+  }
   // Move on with Auth
-  auth.createUserWithEmailAndPassword(email, password)
+  auth.createUserWithEmailAndPassword(email, senha)
   .then(function() {
     // Declare user variable
     var user = auth.currentUser
@@ -46,14 +52,14 @@ function register () {
     // Create User data
     var user_data = {
       email : email,
-      full_name : full_name,
-      favourite_song : favourite_song,
-      milk_before_cereal : milk_before_cereal,
+      nome_completo : nome_completo,
+      cpf : cpf,
+      telefone : telefone,
       last_login : Date.now()
     }
 
     // Push to Firebase Database
-    database_ref.child('users/' + user.uid).set(user_data)
+    database_ref.child('usuarios/' + user.uid).set(user_data)
 
     // DOne
     alert('Usuário Criado!!')
@@ -75,7 +81,7 @@ function login () {
 
   // Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
-    alert('E-mail ou senha está fora de linha!!')
+    alert('E-mail ou senha inválido!!')
     return
     // Don't continue running the code
   }

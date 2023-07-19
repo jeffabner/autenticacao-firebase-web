@@ -22,7 +22,7 @@ function register () {
   repetir_senha = document.getElementById('repetir_senha').value
   nome_completo = document.getElementById('nome_completo').value
   cpf = document.getElementById('cpf').value
-  telefone = document.getElementById('milk_before_cereal').value
+  telefone = document.getElementById('telefone').value
 
   // Validate input fields
   if (validate_email(email) == false || validate_password(senha) == false) {

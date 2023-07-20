@@ -104,7 +104,7 @@ function login () {
 
     // DOne
     alert('Usuário logado!!')
-
+window.location.href = "index.html";
   })
   .catch(function(error) {
     // Firebase will use this to alert of its errors
